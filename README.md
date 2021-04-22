@@ -1,6 +1,6 @@
-# Metaquotes MQL5 - JSON - API
+# ejtraderMT MQL5 Expert
 
-### Development state: stable release version 2.0
+### Development state: stable release version 3.0.3 compatible
 
 Tested on macOS Mojave / Windows 10 in Parallels Desktop container.
 
