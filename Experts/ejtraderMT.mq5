@@ -22,7 +22,7 @@ int LIVE_PORT=15557;
 int STR_PORT=15558;
 
 // ZeroMQ Connections
-Context context("MQL5 JSON API");
+Context context("EJTRADERMT");
 Socket sysSocket(context,ZMQ_REP);
 Socket dataSocket(context,ZMQ_PUSH);
 Socket liveSocket(context,ZMQ_PUSH);

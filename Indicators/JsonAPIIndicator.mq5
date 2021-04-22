@@ -4,8 +4,8 @@
 //|                                     https://www.guntherschulz.de |
 //+------------------------------------------------------------------+
 
-#property copyright "2020 Gunther Schulz"
-#property link      "https://www.guntherschulz.de"
+#property copyright "2021 ejtrader"
+#property link      "https://github.com/ejtraderLabs"
 #property version   "1.00"
 
 #include <StringToEnumInt.mqh>
@@ -17,7 +17,7 @@ string HOST="localhost";
 int CHART_SUB_PORT=15562;
 
 // ZeroMQ Cnnections
-Context context("MQL5 JSON API");
+Context context("EJTRADERMT");
 Socket chartSubscriptionSocket(context,ZMQ_SUB);
 
 //--- input parameters

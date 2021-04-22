@@ -4,7 +4,7 @@
 //|                        https://github.com/ejtraderLabs/MQL5-ejtraderMT
 //+------------------------------------------------------------------+
 #property copyright "Gunther Schulz"
-#property link      "https://github.com/khramkov/MQL5-JSON-API"
+#property link      "https://github.com/ejtraderLAbs/MQL5-ejtraderMT"
 
 #define START_INDICATOR true
 
