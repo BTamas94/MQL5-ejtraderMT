@@ -1,7 +1,7 @@
 
 //+------------------------------------------------------------------+
 #property copyright "ejtrader"
-#property link      "https://github.com/ejtraderLAbs/MQL5-ejtraderMT"
+#property link      "https://github.com/ejtraderLabs/MQL5-ejtraderMT"
 //+------------------------------------------------------------------+
 //| Get historical data                                              |
 //+------------------------------------------------------------------+

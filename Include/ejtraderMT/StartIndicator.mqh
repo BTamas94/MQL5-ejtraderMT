@@ -1,10 +1,5 @@
-//+------------------------------------------------------------------+
-//|                                               StartIndicator.mqh |
-//|                                                   Gunther Schulz |
-//|                        https://github.com/ejtraderLabs/MQL5-ejtraderMT
-//+------------------------------------------------------------------+
-#property copyright "Gunther Schulz"
-#property link      "https://github.com/ejtraderLAbs/MQL5-ejtraderMT"
+#property copyright "ejtrader"
+#property link      "https://github.com/ejtraderLabs/MQL5-ejtraderMT"
 
 #define START_INDICATOR true
 

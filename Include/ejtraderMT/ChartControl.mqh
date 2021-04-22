@@ -1,7 +1,7 @@
 
 
 #property copyright "ejtrader"
-#property link      "https://github.com/ejtraderLAbs/MQL5-ejtraderMT"
+#property link      "https://github.com/ejtraderLabs/MQL5-ejtraderMT"
 
 #define CHART_CONTROL true
 
@@ -114,7 +114,7 @@ void AddChartIndicator(CJAVal &dataObject)
    int chartIdx = GetChartWindowIdxByChartWindowId(chartIdStr);
    long chartId = chartWindows[chartIdx].id;
 
-   double chartIndicatorHandle = iCustom(ChartSymbol(chartId),ChartPeriod(chartId),"JsonAPIIndicator",chartIndicatorId,shortName); //linelabel,colorstyle,linetype,linestyle,linewidth);
+   double chartIndicatorHandle = iCustom(ChartSymbol(chartId),ChartPeriod(chartId),"ejtraderMTIndicator",chartIndicatorId,shortName); //linelabel,colorstyle,linetype,linestyle,linewidth);
 
    if(ChartIndicatorAdd(chartId, chartIndicatorSubWindow, chartIndicatorHandle))
      {

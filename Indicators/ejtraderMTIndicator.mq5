@@ -1,9 +1,4 @@
-﻿//+------------------------------------------------------------------+
-//|                                             JsonAPIIndicator.mq5 |
-//|                                  Copyright 2020,  Gunther Schulz |
-//|                                     https://www.guntherschulz.de |
-//+------------------------------------------------------------------+
-
+﻿
 #property copyright "2021 ejtrader"
 #property link      "https://github.com/ejtraderLabs"
 #property version   "1.00"
@@ -25,7 +20,7 @@ Socket chartSubscriptionSocket(context,ZMQ_SUB);
 #property indicator_plots   30
 
 input string            IndicatorId="";
-input string            ShortName="JsonAPIIndicator";
+input string            ShortName="ejtraderMTIndicator";
 
 //--- indicator settings
 double                  B0[], B1[], B2[], B3[], B4[], B5[], B6[], B7[], B8[], B9[], B10[];
