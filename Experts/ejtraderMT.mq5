@@ -55,7 +55,7 @@ int symbolSubscriptionCount = 0;
 
 // Error handling
 ControlErrors mControl;
-
+datetime tm;
 //+------------------------------------------------------------------+
 //| Bind ZMQ sockets to ports                                        |
 //+------------------------------------------------------------------+
@@ -358,7 +358,7 @@ void StreamPriceData()
 //+------------------------------------------------------------------+
 void OnTimer()
   {
-
+ tm = TimeTradeServer();
 // Stream live price data
    StreamPriceData();
 
@@ -494,7 +494,7 @@ void ScriptConfiguration(CJAVal &dataObject)
 //+------------------------------------------------------------------+
 void GetAccountInfo()
   {
-
+   
    CJAVal info;
 
    info["error"] = false;
@@ -508,7 +508,8 @@ void GetAccountInfo()
    info["margin"] = AccountInfoDouble(ACCOUNT_MARGIN);
    info["margin_free"] = AccountInfoDouble(ACCOUNT_MARGIN_FREE);
    info["margin_level"] = AccountInfoDouble(ACCOUNT_MARGIN_LEVEL);
-
+   info["time"] = string(tm); //sendig time to ejtraderMT for localtime dataframe
+   
    string t=info.Serialize();
    if(debug)
       Print(t);
