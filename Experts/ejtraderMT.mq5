@@ -1,28 +1,9 @@
-﻿//+------------------------------------------------------------------+
-//
-// Copyright (C) 2019 Nikolai Khramkov
-//
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-//
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
-//
-//+------------------------------------------------------------------+
+﻿
 
-// TODO: Deviation
-
-#property copyright   "Copyright 2019, Nikolai Khramkov."
-#property link        "https://github.com/khramkov"
-#property version     "2.00"
-#property description "MQL5 JSON API"
+#property copyright   "Copyright 2021, ejtrader."
+#property link        "https://github.com/ejtraderLabs"
+#property version     "3.03"
+#property description "ejtraderMT"
 #property description "See github link for documentation"
 
 #include <Trade/AccountInfo.mqh>
@@ -47,13 +28,13 @@ Socket dataSocket(context,ZMQ_PUSH);
 Socket liveSocket(context,ZMQ_PUSH);
 Socket streamSocket(context,ZMQ_PUSH);
 
-// Load MQL5-JSON-API includes
+// Load ejtraderMTincludes
 // Required:
-#include <MQL5-JSON_API/HistoryInfo.mqh>
-#include <MQL5-JSON_API/Broker.mqh>
+#include <ejtraderMT/HistoryInfo.mqh>
+#include <ejtraderMT/Broker.mqh>
 // Optional:
-#include <MQL5-JSON_API/StartIndicator.mqh>
-#include <MQL5-JSON_API/ChartControl.mqh>
+#include <ejtraderMT/StartIndicator.mqh>
+#include <ejtraderMT/ChartControl.mqh>
 
 // Global variables \\
 bool debug = false;

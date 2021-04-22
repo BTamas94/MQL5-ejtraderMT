@@ -1,7 +1,7 @@
 //+------------------------------------------------------------------+
 //|                                                  HistoryInfo.mqh |
 //|                                                   Gunther Schulz |
-//|                        https://github.com/khramkov/MQL5-JSON-API |
+//|                        https://github.com/ejtraderLabs/MQL5-ejtraderMT
 //+------------------------------------------------------------------+
 #property copyright "Gunther Schulz"
 #property link      "https://github.com/khramkov/MQL5-JSON-API"

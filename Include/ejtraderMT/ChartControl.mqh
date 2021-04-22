@@ -1,7 +1,7 @@
 //+------------------------------------------------------------------+
 //|                                                 ChartControl.mqh |
 //|                                                   Gunther Schulz |
-//|                        https://github.com/khramkov/MQL5-JSON-API |
+//|                        https://github.com/ejtraderLabs/MQL5-ejtraderMT
 //+------------------------------------------------------------------+
 
 // EXPERIMENTAL - DO NOT USE ;)
