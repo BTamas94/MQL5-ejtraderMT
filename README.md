@@ -21,13 +21,7 @@ Working in production on Debian 10 / Wine 4.
 - [Error handling](#error-handling)
 - [License](#license)
 
-## About the Project
 
-This project was developed to work as a server for the Backtrader Python trading framework. It is based on ZeroMQ sockets and uses JSON format to communicate. But now it has grown to the independent project. You can use it with any programming language that has [ZeroMQ binding](http://zeromq.org/bindings:_start).
-
-Backtrader Python client is located here: [Python Backtrader - Metaquotes MQL5 ](https://github.com/khramkov/Backtrader-MQL5-API)
-
-Thanks to the participation of [Gunther Schulz](https://github.com/Gunther-Schulz), the project moved to a new level.
 
 New features:
 
