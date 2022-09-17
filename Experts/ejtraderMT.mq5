@@ -318,7 +318,6 @@ void StreamPriceData()
                      Data[3] = (double) rates[0].low;
                      Data[4] = (double) rates[0].close;
                      Data[5] = (double) rates[0].tick_volume;
-                     Data[6] = (int) spread[0];
                     }
                   last["status"] = (string) "CONNECTED";
                   last["symbol"] = (string) symbol;
