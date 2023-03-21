@@ -10,19 +10,21 @@ void GetPositions(CJAVal &dataObject)
   {
    CPositionInfo myposition;
    CJAVal data, position;
-
+ 
 // Get positions
    int positionsTotal=PositionsTotal();
 // Create empty array if no positions
    if(!positionsTotal)
       data["positions"].Add(position);
 // Go through positions in a loop
+ 
    for(int i=0; i<positionsTotal; i++)
      {
       mControl.mResetLastError();
-
-      if(myposition.Select(PositionGetSymbol(i)))
-        {
+ 
+      //if(myposition.Select(PositionGetSymbol(i)))
+   
+    ulong ticket = PositionGetTicket(i);   
          position["id"]=PositionGetInteger(POSITION_IDENTIFIER);
          position["magic"]=PositionGetInteger(POSITION_MAGIC);
          position["symbol"]=PositionGetString(POSITION_SYMBOL);
@@ -32,16 +34,17 @@ void GetPositions(CJAVal &dataObject)
          position["stoploss"]=PositionGetDouble(POSITION_SL);
          position["takeprofit"]=PositionGetDouble(POSITION_TP);
          position["volume"]=PositionGetDouble(POSITION_VOLUME);
-
+         position["profit"]=PositionGetDouble(POSITION_PROFIT);
+ 
          data["error"]=(bool) false;
          data["positions"].Add(position);
-        }
+        
       CheckError(__FUNCTION__);
      }
-
+ 
    string t=data.Serialize();
-   if(debug)
-      Print(t);
+  
+      //Print(t);
    InformClientSocket(dataSocket,t);
   }
 
@@ -107,7 +110,7 @@ void TradingModule(CJAVal &dataObject)
    SymbolInfoString(symbol, SYMBOL_DESCRIPTION);
    CheckError(__FUNCTION__);
 
-   int      idNimber=dataObject["id"].ToInt();
+   ulong      idNimber=dataObject["id"].ToInt();
    double   volume=dataObject["volume"].ToDbl();
    double   SL=dataObject["stoploss"].ToDbl();
    double   TP=dataObject["takeprofit"].ToDbl();
